@@ -35,7 +35,7 @@ GraphViz::Data::Grapher.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 # disabled - two tests failed for me...

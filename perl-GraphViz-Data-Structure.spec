@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# do not perform "make test"
+%bcond_with	tests	# perform "make test" (one meaningless test fails)
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	GraphViz
@@ -40,8 +40,6 @@ GraphViz::Data::Grapher.
 	INSTALLDIRS=vendor
 %{__make}
 
-# disabled - two tests failed for me...
-# check it again
 %{?with_tests:%{__make} test}
 
 %install

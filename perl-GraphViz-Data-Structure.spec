@@ -37,7 +37,7 @@ GraphViz::Data::Grapher.
 %{__make}
 
 # disabled - two tests failed for me...
-#%{!?_without_tests:%{__make} test}
+#%%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT

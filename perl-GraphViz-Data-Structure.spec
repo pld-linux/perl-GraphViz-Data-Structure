@@ -8,7 +8,7 @@ Summary:	GraphViz::Data::Structure module - visualise data structures
 Summary(pl):	Modu³ GraphViz::Data::Structure - wizualizacja struktur danych
 Name:		perl-GraphViz-Data-Structure
 Version:	0.07
-Release:	2
+Release:	3
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz

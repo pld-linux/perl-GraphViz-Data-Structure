@@ -8,15 +8,15 @@
 Summary:	GraphViz::Data::Structure module - visualise data structures
 Summary(pl):	Modu³ GraphViz::Data::Structure - wizualizacja struktur danych
 Name:		perl-GraphViz-Data-Structure
-Version:	0.07
-Release:	4
+Version:	0.12
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	6832a2c21ace370b24f4d80c095f7d69
+# Source0-md5:	79dcdadded7f193f907e362efab61f55
 BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	perl-GraphViz >= 1.3
+BuildRequires:	perl-GraphViz >= 2.01
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-GraphViz >= 1.3
 BuildArch:	noarch
@@ -56,5 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc BUGS Changes README
-%{perl_vendorlib}/GraphViz/Data/Structure.pm
+%{perl_vendorlib}/GraphViz/Data/*.pm
 %{_mandir}/man3/*

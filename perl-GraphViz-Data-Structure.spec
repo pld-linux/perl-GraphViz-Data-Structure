@@ -1,6 +1,7 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	GraphViz
 %define		pnam	Data-Structure
@@ -39,7 +40,8 @@ GraphViz::Data::Grapher.
 %{__make}
 
 # disabled - two tests failed for me...
-#%%{!?_without_tests:%{__make} test}
+# check it again
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT

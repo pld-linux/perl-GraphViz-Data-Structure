@@ -6,7 +6,7 @@
 %define		pdir	GraphViz
 %define		pnam	Data-Structure
 Summary:	GraphViz::Data::Structure module - visualise data structures
-Summary(pl.UTF-8):   Moduł GraphViz::Data::Structure - wizualizacja struktur danych
+Summary(pl.UTF-8):	Moduł GraphViz::Data::Structure - wizualizacja struktur danych
 Name:		perl-GraphViz-Data-Structure
 Version:	0.15
 Release:	1

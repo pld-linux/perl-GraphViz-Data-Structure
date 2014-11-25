@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_with	tests	# perform "make test" (one meaningless test fails)
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	GraphViz
 %define		pnam	Data-Structure
+%include	/usr/lib/rpm/macros.perl
 Summary:	GraphViz::Data::Structure module - visualise data structures
 Summary(pl.UTF-8):	Moduł GraphViz::Data::Structure - wizualizacja struktur danych
 Name:		perl-GraphViz-Data-Structure
@@ -15,8 +15,9 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	8ba386e9052d3592c92b953742e18438
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/GraphViz-Data-Structure/
 BuildRequires:	perl-GraphViz >= 2.02
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-GraphViz >= 1.3
 BuildArch:	noarch
